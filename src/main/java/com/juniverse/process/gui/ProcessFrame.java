@@ -102,7 +102,7 @@ public class ProcessFrame extends JFrame {
 
                     for (int j = 0; j < model.getColumnCount(); j++) {
                         writer.printf("%s: %s%n",
-                                model.getColumName(j),
+                                model.getColumnName(j),
                                 model.getFormattedValueAt(i, j));
                     }
 
@@ -255,7 +255,7 @@ public class ProcessFrame extends JFrame {
     }
 
     /**
-     * About.
+     * Muestra el cuadro «Acerca de».
      */
     private void about() {
         AboutDialog aboutDialog = new AboutDialog(this);

@@ -3,29 +3,26 @@ package com.juniverse.process.util;
 import javax.swing.*;
 
 public final class MessageUtil {
-    /**
-     * Instantiates a new message util.
-     */
     private MessageUtil() {
 
     }
 
     /**
-     * Show error.
+     * Muestra un mensaje de error.
      *
-     * @param msg the msg
-     * @param title the title
+     * @param msg mensaje
+     * @param title título
      */
     public static void showError(String msg, String title) {
         JOptionPane.showMessageDialog(null, msg, title, JOptionPane.ERROR_MESSAGE);
     }
 
     /**
-     * Show error.
+     * Muestra un mensaje de error.
      *
-     * @param msg the msg
-     * @param title the title
-     * @param ex the ex
+     * @param msg mensaje
+     * @param title título
+     * @param ex excepción
      */
     public static void showError(String msg, String title, Exception ex) {
         JOptionPane.showMessageDialog(null, msg + "\n" + ex.getMessage(),
@@ -33,20 +30,20 @@ public final class MessageUtil {
     }
 
     /**
-     * Show error.
+     * Muestra un mensaje de error.
      *
-     * @param msg the msg
-     * @param ex the ex
+     * @param msg mensaje
+     * @param ex excepción
      */
     public static void showError(String msg, Exception ex) {
         showError(msg, "Error", ex);
     }
 
     /**
-     * Show info.
+     * Muestra un mensaje informativo.
      *
-     * @param msg the msg
-     * @param title the title
+     * @param msg mensaje
+     * @param title título
      */
     public static void showInfo(String msg, String title) {
         JOptionPane.showMessageDialog(null, msg, title,

@@ -18,37 +18,23 @@ public class AboutDialog extends JDialog {
     @Serial
     private static final long serialVersionUID = 1L;
 
-    /** The Constant APP_NAME. */
     private static final String APP_NAME = "Process";
 
-    /** The Constant VERSION. */
     private static final String VERSION = "1.0.0";
 
-    /** The Constant AUTHOR. */
     private static final String AUTHOR = "A. Juarez";
 
-    /** The Constant WEBSITE. */
-    private static final String WEBSITE = "https://github.com/AJuarez0021";
+    private static final String WEBSITE = "https://github.com/programming0026";
 
-    /** The Constant COPYRIGHT. */
     private static final String COPYRIGHT = "© %d All rights reserved";
 
-    /** The Constant FONT_NAME. */
     private static final String FONT_NAME = "Arial";
 
-    /**
-     * Instantiates a new about dialog.
-     *
-     * @param parent the parent
-     */
     public AboutDialog(Frame parent) {
         super(parent, "About", true);
         initComponents();
     }
 
-    /**
-     * Initialize the components.
-     */
     private void initComponents() {
         setLayout(new BorderLayout(10, 10));
         setResizable(false);
@@ -130,9 +116,9 @@ public class AboutDialog extends JDialog {
     /**
      * Crea un JLabel con hipervínculo funcional.
      *
-     * @param text The text
-     * @param url The url
-     * @return the j label
+     * @param text texto
+     * @param url dirección URL
+     * @return etiqueta
      */
     private JLabel createHyperlinkLabel(String text, String url) {
         JLabel label = new JLabel("<html><u>" + text + "</u></html>");
@@ -163,7 +149,7 @@ public class AboutDialog extends JDialog {
     /**
      * Abre una URL en el navegador predeterminado.
      *
-     * @param url the url
+     * @param url dirección URL
      */
     private void openWebpage(String url) {
         try {
@@ -185,7 +171,7 @@ public class AboutDialog extends JDialog {
     /**
      * Muestra la URL en un diálogo si no se puede abrir automáticamente.
      *
-     * @param url the url
+     * @param url dirección URL
      */
     private void showUrlManually(String url) {
 

@@ -33,14 +33,6 @@ public class ProcessTableModel extends AbstractTableModel {
         fireTableDataChanged();
     }
 
-    /**
-     * Nombre de una columna (usado al exportar).
-     * @param index número de columna
-     */
-    public String getColumName(int index) {
-        return COLS[index];
-    }
-
     /** Cantidad de procesos. */
     @Override
     public int getRowCount() {
