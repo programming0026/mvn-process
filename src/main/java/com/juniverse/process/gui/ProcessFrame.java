@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author ajuar
+ * @author Java Universe
  */
 public class ProcessFrame extends JFrame {
     private static final Logger log

@@ -6,7 +6,7 @@ import oshi.software.os.OSProcess;
 
 /**
  *
- * @author ajuar
+ * @author Java Universe
  */
 public class ProcessTableModel extends AbstractTableModel {
 

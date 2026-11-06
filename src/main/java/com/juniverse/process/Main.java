@@ -8,7 +8,7 @@ import javax.swing.SwingUtilities;
 /**
  * Visor de procesos del sistema operativo con interfaz Swing y tema oscuro FlatLaf.
  *
- * @author ajuar
+ * @author Java Universe
  */
 public class Main {
 
